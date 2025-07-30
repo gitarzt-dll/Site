@@ -1,0 +1,155 @@
+/* Общие стили */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контент с полупрозрачным фоном */
+
+main {
+  background: rgba(18, 18, 18, 0.85);
+  margin: 40px auto 60px auto;
+  padding: 30px 40px;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px #0088cc;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #00bfff;
+  text-shadow: 0 0 8px #0088cc;
+}
+
+/* Навигация */
+
+header {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+nav.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  user-select: none;
+  cursor: default;
+  color: #00bfff;
+  text-shadow: 0 0 8px #0088cc;
+}
+
+ul.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+ul.nav-menu li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.nav-menu li a:hover,
+ul.nav-menu li a.active {
+  background-color: #0088cc;
+  color: #fff;
+}
+
+/* Голосование */
+
+ul.poll-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.poll-list li {
+  font-size: 1.6rem;
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0088cc;
+}
+
+ul.poll-list li button {
+  background-color: #0088cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+ul.poll-list li button:hover {
+  background-color: #005f8a;
+  transform: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Текст под кнопками */
+
+.login-prompt {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.login-prompt a {
+  color: #00bfff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.note {
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+  color: #bbb;
+}
+
+/* Раздел О нас */
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Футер */
+
+footer {
+  text-align: center;
+  color: #666;
+  margin: 20px 0 40px;
+  font-size: 0.9rem;
+}
